@@ -1,3 +1,11 @@
 <div>
-<app-contact-details #details (eventClick)="handleEventClicked($event)" [contact]="contact1"></app-contact-details>
+  <div class="row">
+    <div *ngFor="let contact of contacts" class="col-md-5">
+      <app-contact-details
+        (eventClick)="handleEventClicked($event)"
+        [contact]="contact">
+      </app-contact-details>
+    </div>
+  </div>
+
 </div>

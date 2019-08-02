@@ -1,8 +1,10 @@
   <div class="well hoverwell thumbnail">
-    <h3>Name:  {{contact.name}}</h3>
-    <h3>Category:  {{contact.category}}</h3>
-    <h3>Description:   {{contact.description}}</h3>
-    <h3>Location:  {{contact.location}}</h3>
+    <div>Name:  {{contact.name}}</div>
+    <div *ngIf="contact?.category">
+        <div>Category: {{contact.category}}</div>
+    </div>
+    <div>Description:   {{contact.description}}</div>
+    <div>Location:  {{contact.location}}</div>
     <div>
       <button class="btn btn-primary" (click)="editContact()">edit</button>
       <button class="btn btn-primary" (click)="deleteContact()">delete</button>

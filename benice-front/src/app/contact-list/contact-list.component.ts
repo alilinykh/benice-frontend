@@ -9,14 +9,39 @@ export class ContactListComponent implements OnInit {
 
   constructor() { }
 
-  contact1 = {
+  contacts = [ {
     id: 1,
     name: 'Alex',
     category: 'Important',
     description: 'some random info',
     picUrl: 'null',
     location: 'Zipcode'
-  };
+  },
+  {
+    id: 2,
+    name: 'Bob',
+    category: 'work',
+    description: ' frontend magician',
+    picUrl: 'www.google.com',
+    location: 'Zipcode'
+  },
+  {
+    id: 2,
+    name: 'Ben',
+    category: 'work',
+    description: ' sdfdsfsf',
+    picUrl: 'www.google.com',
+    location: 'Zipcode'
+  },
+  {
+    id: 2,
+    name: 'Ed',
+
+    description: ' asdf',
+    picUrl: 'www.google.com',
+    location: 'Zipcode'
+  }
+];
 
   handleEventClicked(data: any) {
     console.log('recieved: ', data);
