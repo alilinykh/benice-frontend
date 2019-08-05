@@ -1,13 +1,14 @@
-  <div class="well hoverwell thumbnail">
+  <div [routerLink]="['/contacts', contact.id]" class="well hoverwell thumbnail">
+    <div><img class="profile-pic" src={{contact.picUrl}}></div>
+    <br>
     <div>Name:  {{contact.name}}</div>
     <div *ngIf="contact?.category">
         <div>Category: {{contact.category}}</div>
     </div>
-    <div>Description:   {{contact.description}}</div>
+    <!-- <div>Description:   {{contact.description}}</div> -->
     <div>Location:  {{contact.location}}</div>
-    <div>
-      <button class="btn btn-primary" (click)="editContact()">edit</button>
-      <button class="btn btn-primary" (click)="deleteContact()">delete</button>
-    </div>
+    <br>
+
+
   </div>
 

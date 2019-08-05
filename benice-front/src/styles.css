@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-body{ background-color: #bd362f;}
+/* body{ background-color: #bd362f;} */
 .hoverwell:hover {
     background-color: #485563;
     cursor: pointer;
@@ -7,6 +7,13 @@ body{ background-color: #bd362f;}
 
   .container {
     padding-top: 10px;
+    background-color: black
+  }
+  .btn {
+    background-color: rgb(255, 202, 28);
+    margin: 3px;
+    text-align: center;
+    color: #bd362f;
   }
 
   .pointable {

@@ -1,9 +1,12 @@
 <div>
+    <h1>Your contacts:</h1>
   <div class="row">
     <div *ngFor="let contact of contacts" class="col-md-5">
       <app-contact-details
+        (click)="handleContactClickToastr(contact.name)"
         (eventClick)="handleEventClicked($event)"
         [contact]="contact">
+
       </app-contact-details>
     </div>
   </div>
