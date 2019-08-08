@@ -1,0 +1,21 @@
+<div class="container">
+  <div *ngIf="contact.picUrl"><img [src]="contact?.picUrl" [alt]="contact?.name" class="contact-image"></div>
+
+  <div class="row">
+    <div class="col-md-11">
+      <h2>{{contact?.name}} </h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div><strong>Category: </strong> {{contact?.category}}</div><br>
+       <div><strong>Time: </strong> {{contact?.description}}</div><br>
+       <div><strong>Location: </strong>{{contact?.location}}</div><br>
+    </div>
+  </div>
+  <div>
+      <button class="btn btn-primary">edit</button>
+      <button class="btn btn-primary" (click)="deleteContact()">delete</button>
+    </div>
+</div>
