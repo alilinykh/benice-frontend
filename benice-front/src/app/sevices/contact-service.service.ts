@@ -46,7 +46,6 @@ const CONTACTS = [ {
 {
   id: 4,
   name: 'Ed',
-
   description: ' asdf',
   picUrl: 'https://vignette.wikia.nocookie.net/rickandmorty/images/3/30/Glootie.png/revision/latest?cb=20190720005839',
   location: 'Zipcode'

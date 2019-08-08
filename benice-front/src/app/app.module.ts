@@ -23,7 +23,7 @@ import { Page404Component } from './errors/page404.component';
     NavbarComponent,
     ContactPageComponent,
     NewContactComponent,
-    Page404Component
+    Page404Component,
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
