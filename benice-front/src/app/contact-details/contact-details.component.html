@@ -1,12 +1,12 @@
   <div [routerLink]="['/contacts', contact.contact_id]" class="well hoverwell thumbnail">
     <div><img class="profile-pic" src={{contact.pictureUrl}}></div>
     <br>
-    <div>Name: {{contact.name}}</div>
+    <div><u>Name: </u>{{contact.name}}</div>
     <div *ngIf="contact?.category">
-        <div>Category: {{contact.category}}</div>
+        <div><u>Category: </u>{{contact.category}}</div>
     </div>
     <!-- <div>Description:   {{contact.description}}</div> -->
-    <div *ngIf="contact?.location">Location:  {{contact.location}}</div>
+    <div *ngIf="contact?.location"><u>Location:  </u>{{contact.location}}</div>
     <br>
 
 

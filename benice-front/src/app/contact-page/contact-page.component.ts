@@ -14,7 +14,6 @@ export class ContactPageComponent implements OnInit {
    }
 
   ngOnInit() {
-    console.log(+this.route.snapshot.paramMap.get('id'));
     this.contactService.getContact(+this.route.snapshot.params['id']).subscribe(data =>
       this.contact = data);
 
@@ -24,6 +23,11 @@ export class ContactPageComponent implements OnInit {
 
     // this.conctactService.getContacts().subscribe( data => {
       // this.contacts = data;
+  }
+  // tslint:disable-next-line: variable-name
+  deleteContact(contact_id: number) {
+    console.log(1);
+    this.contactService.deleteContact(contact_id);
   }
 
 }

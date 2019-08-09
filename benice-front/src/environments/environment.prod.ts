@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  url: 'www.google.com' // fix it after deployment
+  url: 'https://benice-backend.herokuapp.com/'
 };

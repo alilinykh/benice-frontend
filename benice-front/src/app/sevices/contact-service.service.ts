@@ -25,6 +25,11 @@ export class ContactServiceService {
   getContact(id: number) {
     return this.http.get<Contact>(this.root + 'contacts/' + id);
   }
+  async deleteContact(id: number) {
+    console.log(id);
+    const c = this.http.delete(this.root + 'contacts/' + id).toPromise();
+    return c;
+  }
 }
 
 
