@@ -1,5 +1,5 @@
 export class Contact {
-  id: number;
+  contact_id: number;
   name: string;
   category: string;
   description: string;
@@ -7,7 +7,7 @@ export class Contact {
   location: string;
 
   constructor() {
-    this.id = null;
+    this.contact_id = null;
     this.name = '';
     this.category = '';
     this.description = '';

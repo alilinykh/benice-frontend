@@ -14,10 +14,8 @@ export class ContactListComponent implements OnInit {
   contacts: Contact[];
 
   constructor(private conctactService: ContactServiceService, private toastr: ToastrService) {
-    this.contacts = this.contacts;
   }
   handleEventClicked(data: Contact) {
-    console.log('asdfasdfasfd')
     console.log('recieved: ', data);
   }
 
@@ -26,7 +24,7 @@ export class ContactListComponent implements OnInit {
      this.contacts = data;
    });
   }
-  handleContactClickToastr(contactName: any) {
+  handleContactClickToastr(contactName: string) {
     this.toastr.success(contactName);
   }
 

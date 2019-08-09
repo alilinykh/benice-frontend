@@ -11,9 +11,12 @@ export class ContactDetailsComponent implements OnInit {
   @Input() contact: Contact;
   @Output() eventClick = new EventEmitter();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
+    console.log(this.contact);
+
   }
   editContact() {
     console.log('this will edit contact');
