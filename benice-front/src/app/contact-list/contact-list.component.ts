@@ -1,3 +1,4 @@
+import { Contact } from './../contact';
 import { ToastrService } from './../sevices/toastr.service';
 import { ContactServiceService } from './../sevices/contact-service.service';
 import { Component, OnInit } from '@angular/core';
@@ -10,16 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ContactListComponent implements OnInit {
-  contacts: any[];
+  contacts: Contact[];
 
   constructor(private conctactService: ContactServiceService, private toastr: ToastrService) {
+    this.contacts = this.contacts;
   }
-  handleEventClicked(data: any) {
+  handleEventClicked(data: Contact) {
+    console.log('asdfasdfasfd')
     console.log('recieved: ', data);
   }
 
   ngOnInit() {
-    this.contacts = this.conctactService.getContacts();
+   this.conctactService.getContacts().subscribe( data => {
+     this.contacts = data;
+   });
   }
   handleContactClickToastr(contactName: any) {
     this.toastr.success(contactName);

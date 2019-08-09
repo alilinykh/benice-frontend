@@ -1,3 +1,4 @@
+import { Contact } from './../contact';
 import { Component, OnInit, Input, Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
 
@@ -7,7 +8,7 @@ import { EventEmitter } from '@angular/core';
   styleUrls: ['./contact-details.component.css']
 })
 export class ContactDetailsComponent implements OnInit {
-  @Input() contact: any;
+  @Input() contact: Contact;
   @Output() eventClick = new EventEmitter();
 
   constructor() { }

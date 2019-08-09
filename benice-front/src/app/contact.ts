@@ -3,7 +3,7 @@ export class Contact {
   name: string;
   category: string;
   description: string;
-  picUrl: string;
+  pictureUrl: string;
   location: string;
 
   constructor() {
@@ -11,7 +11,7 @@ export class Contact {
     this.name = '';
     this.category = '';
     this.description = '';
-    this.picUrl = 'https://miro.medium.com/max/1248/1*eu4dAuXCqJGM7vjKx3D8WA.png';
+    this.pictureUrl = 'https://miro.medium.com/max/1248/1*eu4dAuXCqJGM7vjKx3D8WA.png';
     this.location = '';
   }
 }
