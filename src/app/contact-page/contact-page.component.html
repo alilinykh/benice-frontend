@@ -15,7 +15,7 @@
     </div>
   </div>
   <div>
-      <button class="btn btn-primary">edit</button>
-      <button class="btn btn-primary" (click)="deleteContact(contact.contact_id)">delete</button>
+      <div><button class="btn btn-primary">edit</button></div>
+      <div [routerLink]="['/contacts']"><button class="btn btn-primary" (click)="deleteContact(contact.contact_id)">delete</button></div>
     </div>
 </div>

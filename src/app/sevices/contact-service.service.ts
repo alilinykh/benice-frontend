@@ -28,9 +28,9 @@ export class ContactServiceService {
     return this.http.get<Contact>(this.root + 'contacts/' + id);
   }
   async deleteContact(id: number) {
-    console.log(id);
-    const c = this.http.delete(this.root + 'contacts/' + id).toPromise();
-    return c;
+    console.log('this contact will be deleted --->  ' + id);
+    return await this.http.delete<Contact>(this.root + 'contacts/' + id).toPromise();
+
   }
 }
 
